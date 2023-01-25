@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs" />
+    <Compile Update="Rental.cs" />
+    <Compile Update="ReturnCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ClassLibrary">
+      <HintPath>..\ClassLibrary\bin\Debug\ClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
